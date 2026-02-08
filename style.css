@@ -10,110 +10,102 @@ body {
     align-items: center;
 }
 
-body > * {
+main {
     width: 95%;
     max-width: 900px;
-    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
 }
 
 h1 {
     color: #1a5d1a;
-    text-align: center;
     margin-top: 40px;
-    font-size: 2rem;
-    border-bottom: 4px solid #f9d949;
     padding-bottom: 10px;
+    border-bottom: 4px solid #f9d949;
 }
 
 h2 {
     color: #2c3e50;
-    text-align: center;
-    margin: 30px 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    text-align: center;
+    margin: 40px 0 20px;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 20px 0;
+    border: 0; height: 1px; background: #ccc; margin: 20px 0;
 }
 
-h3 {
+article h3 {
     background-color: #1a5d1a;
-    color: #ffffff;
+    color: white;
     padding: 15px 20px;
     border-radius: 8px 8px 0 0;
-    margin: 20px 0 0 0;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 30px 0 0 0;
 }
 
-h3 + p {
-    background-color: #ffffff !important;
+article p {
+    background-color: white !important;
     padding: 25px !important;
-    margin: 0 0 30px 0 !important;
+    margin: 0 0 20px 0 !important;
     border-radius: 0 0 8px 8px !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
-    text-align: justify;
     display: block !important;
 }
 
-b {
-    color: #1a5d1a;
-}
-
-.card-imagem {
+figure {
     margin: 30px 0;
-    width: 100%;
-}
-
-.conteudo-imagem {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 0 0 8px 8px;
     text-align: center;
+    background: white;
+    padding: 0 0 20px 0;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.conteudo-imagem img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+figure h3 {
+    background-color: #1a5d1a;
+    color: white;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border-radius: 8px 8px 0 0;
 }
 
-.legenda {
+figure img {
+    max-width: 90%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+figcaption {
     font-size: 0.9rem;
     color: #666;
     font-style: italic;
     margin-top: 10px;
-    background: transparent !important;
-    box-shadow: none !important;
 }
 
-.card-justificativa-v2 {
-    width: 100%;
+.justificativa-tecnica {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
-.conteudo-lista {
-    background-color: #ffffff !important;
-    padding: 10px 25px !important;
-    border-radius: 0 0 8px 8px !important;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
-    display: block !important;
+.justificativa-tecnica h3 {
+    background-color: #1a5d1a;
+    color: white;
+    padding: 15px 20px;
+    margin: 0;
 }
 
 .item-linha {
-    border-bottom: 1px solid #dddddd !important;
-    padding: 20px 0 !important;
+    border-bottom: 1px solid #eee !important;
+    padding: 20px 25px !important;
     margin: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
+    background: white !important;
     display: block !important;
-    width: 100% !important;
 }
 
 .no-border {
@@ -123,32 +115,31 @@ b {
 .titulo-item {
     color: #1a5d1a;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .badget {
     float: right;
     background-color: #1a5d1a;
-    color: #ffffff;
-    padding: 3px 12px;
-    border-radius: 15px;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
     font-size: 0.8rem;
     font-weight: bold;
 }
 
-.nota-tecnica-v2 {
-    border-top: 1px solid #eee;
-    padding: 20px !important;
-    margin: 0 !important;
+.nota-tecnica-final {
+    display: block;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
     font-style: italic;
     font-size: 0.9rem;
     color: #555;
-    text-align: center;
-    background: #fdfdfd !important;
-    box-shadow: none !important;
+    border-top: 1px solid #eee;
 }
 
-@media (max-width: 600px) {
-    h1 { font-size: 1.5rem; }
-    .badget { float: none; display: block; margin-bottom: 5px; width: fit-content; }
+footer {
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.85rem;
 }
