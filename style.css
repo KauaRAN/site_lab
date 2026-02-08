@@ -175,3 +175,62 @@ tr:hover {
     border-radius: 0 0 8px 8px;
     font-weight: 500;
 }
+
+.card-justificativa-v2 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.conteudo-lista {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.item-justificativa {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    position: relative;
+}
+
+.item-justificativa:last-of-type {
+    border-bottom: none;
+}
+
+.item-justificativa h4 {
+    color: #1a5d1a;
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.item-justificativa p {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    background-color: transparent;
+}
+
+.badget {
+    float: right;
+    background-color: #e8f5e9;
+    color: #1a5d1a;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #1a5d1a;
+}
+
+.nota-tecnica-v2 {
+    margin-top: 20px !important;
+    background-color: #f8f9fa !important;
+    border-left: 4px solid #f9d949;
+    font-style: italic;
+    padding: 15px !important;
+    font-size: 0.9rem !important;
+    text-align: center;
+}
+
